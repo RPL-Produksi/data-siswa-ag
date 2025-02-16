@@ -20,7 +20,7 @@
     <title>{{ config('app.name') }} | @yield('title')</title>
 </head>
 
-<body class="bg-primary">
+<body class="bg-danger">
     {{-- <div id="preloader">
         <img src="{{ asset('assets/img/e-vote-logo-1.png') }}" alt="Logo Preloader">
     </div> --}}

@@ -44,11 +44,12 @@
 @section('content')
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="row border rounded-5 p-3 bg-white shadow box-area">
-            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box bg-primary">
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box bg-danger">
                 <div class="featured-image mb-3">
                     <img src="{{ asset('assets/img/smkn-2.png') }}" class="img-fluid d-none d-md-block" style="width: 250px;">
                 </div>
-                <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">SMK Negeri 2 Sukabumi</p>
+                <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">SMK
+                    Negeri 2 Sukabumi</p>
                 <small class="text-white text-wrap text-center"
                     style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Mulia, Professional, Juara</small>
             </div>
@@ -60,14 +61,18 @@
                         <p>Kami senang Anda kembali</p>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg bg-light fs-6"
-                            placeholder="Email address">
-                    </div>
-                    <div class="input-group mb-5">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" name="username">
                     </div>
                     <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" name="password">
+                    </div>
+                    @if (Session::has('error'))
+                        <div class="alert alert-danger fade show w-100 mb-5" role="alert">
+                            {{ Session::get('error') }}
+                        </div>
+                    @endif
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-danger w-100 fs-6">Login</button>
                     </div>
                 </div>
             </div>
