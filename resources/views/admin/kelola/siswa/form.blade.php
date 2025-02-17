@@ -58,9 +58,39 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="ttl">Tempat Lahir</label>
+                                    <label for="ttl">Tempat Tanggal Lahir</label>
                                     <input type="text" class="form-control" name="ttl" id="ttl"
                                         placeholder="Masukkan Tempat Tanggal Lahir" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="">Jenis Kelamin</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="L">Laki-Laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="">Nama Ayah</label>
+                                    <input type="text" class="form-control" name="nama_ayah" id="nama_ayah"
+                                        placeholder="Masukkan Nama Ayah" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="">Nama Ibu</label>
+                                    <input type="text" class="form-control" name="nama_ibu" id="nama_ibu"
+                                        placeholder="Masukkan Nama Ibu" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="">Anak Ke</label>
+                                    <input type="number" class="form-control" name="anak_ke" id="anak_ke"
+                                        placeholder="Masukkan Anak Ke" required>
                                 </div>
                             </div>
                         </div>
