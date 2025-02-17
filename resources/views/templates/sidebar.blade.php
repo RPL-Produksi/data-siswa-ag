@@ -25,8 +25,8 @@
             <span>Kelola Kelas</span>
         </a>
     </li>
-    <li class="nav-item {{ @$menu_type == 'manage-user' ? 'active' : '' }}">
-        <a href="" class="nav-link">
+    <li class="nav-item {{ @$menu_type == 'kelola-siswa' ? 'active' : '' }}">
+        <a href="{{ route('admin.kelola.siswa') }}" class="nav-link">
             <i class="fa-regular fa-fw fa-users"></i>
             <span>Kelola User</span>
         </a>
