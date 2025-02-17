@@ -60,20 +60,25 @@
                         <h2>Selamat Datang</h2>
                         <p>Kami senang Anda kembali</p>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" name="username">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" name="password">
-                    </div>
-                    @if (Session::has('error'))
-                        <div class="alert alert-danger fade show w-100 mb-5" role="alert">
-                            {{ Session::get('error') }}
+                    <form action="{{ route('post.login') }}" method="POST" class="w-100">
+                        @csrf
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username"
+                                name="username" required>
                         </div>
-                    @endif
-                    <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-danger w-100 fs-6">Login</button>
-                    </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password"
+                                name="password" required>
+                        </div>
+                        @if (Session::has('error'))
+                            <div class="alert alert-danger fade show w-100 mb-5" role="alert">
+                                {{ Session::get('error') }}
+                            </div>
+                        @endif
+                        <div class="input-group mb-3">
+                            <button type="submit" class="btn btn-lg btn-danger w-100 fs-6">Login</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

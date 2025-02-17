@@ -23,16 +23,16 @@
         <img src="{{ asset('assets/img/e-vote-logo-1.png') }}" alt="Logo Preloader">
     </div> --}}
     <div id="wrapper">
-        @include('template.sidebar')
+        @include('templates.sidebar')
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                @include('template.navbar')
+                @include('templates.navbar')
                 <div class="container-fluid" style="min-height: 100vh">
                     @yield('content')
                 </div>
             </div>
 
-            @include('template.footer')
+            @include('templates.footer')
         </div>
     </div>
 

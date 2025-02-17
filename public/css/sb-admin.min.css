@@ -2770,8 +2770,17 @@ fieldset:disabled a.btn {
     color: #6895D2;
     text-decoration: none;
 }
+.btn-link-danger {
+    font-weight: 400;
+    color: #D04848;
+    text-decoration: none;
+}
 .btn-link:hover {
     color: #224abe;
+    text-decoration: underline;
+}
+.btn-link-danger:hover {
+    color: #aa3232;
     text-decoration: underline;
 }
 .btn-link.focus,
