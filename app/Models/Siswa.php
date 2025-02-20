@@ -20,6 +20,12 @@ class Siswa extends Model
         'nama_ayah',
         'nama_ibu',
         'anak_ke',
-        'photo'
+        'photo',
+        'kelas_id',
     ];
+
+    public function kelas()
+    {
+        return $this->belongsTo(Kelas::class);
+    }
 }

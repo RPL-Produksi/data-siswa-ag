@@ -34,14 +34,14 @@ Route::prefix('admin')->group(function () {
                 });
             });
 
-            Route::controller(AdminKelolaSiswaController::class)->group(function() {
+            Route::controller(AdminKelolaSiswaController::class)->group(function () {
                 Route::prefix('siswa')->group(function () {
                     Route::get('/', 'index')->name('admin.kelola.siswa');
                     Route::get('/form/{id?}', 'form')->name('admin.kelola.siswa.form');
                     Route::post('/store/{id?}', 'store')->name('admin.kelola.siswa.store');
                     Route::get('/data', 'data')->name('admin.kelola.siswa.data');
-                    Route::get('/data/{id}', 'dataById')->name('admin.kelola.siswa.data.id');
                     Route::delete('/delete/{id}', 'delete')->name('admin.kelola.siswa.delete');
+                    Route::post('import', 'importSiswa')->name('admin.kelola.siswa.import');
                 });
             });
         });
